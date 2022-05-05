@@ -7,16 +7,19 @@ public class Hexadecimal {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Give me a number");
-        double i = scanner.nextDouble();
-        while(i <= 100){
-            i++;
-            if(i % 2 ==0){
-                continue;
+        double x = scanner.nextDouble();
+        for (int i = 0; i <= x; i++) {
+            if(x % 2 ==0){
+                x = i;
+                i++;
             }
-            System.out.println(i);
+            System.out.println(x/2);
+            break;
+            
+        }
         }
     }
-}
+
 
 
 
