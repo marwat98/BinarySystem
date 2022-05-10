@@ -12,7 +12,7 @@ public class Binary2 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Add number: ");
         number1.x = scanner.nextInt();
-        System.out.println("Value binary is: ");
+        System.out.println("The binary value is: ");
         for (int i = 15; i >= 0 ; i--) {
             if((number1.x & 0b1 << i) != 0b0){
                 System.out.print("1");
